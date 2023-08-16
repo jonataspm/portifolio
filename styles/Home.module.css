@@ -1,0 +1,13 @@
+.container{
+  background-color: #121215;
+}
+
+.main {
+  min-height: auto;
+  padding: 1rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+}
+
