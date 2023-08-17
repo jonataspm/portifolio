@@ -1,5 +1,8 @@
+
 .container{
-  background-color: #121215;
+  background: var(--background-color);
+  width: 100VW;
+  height: 100Vh;
 }
 
 .main {

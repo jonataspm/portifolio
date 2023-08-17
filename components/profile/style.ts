@@ -2,17 +2,58 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const ProfDiv = styled.div`
-  padding: 3%;
-  width: auto;
-  border-radius: 20px;
-  border: 2px solid #000;
-  background: rgba(217, 217, 217, 0.00);
 
+  padding: 2%;
+  width: 30%;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+
+  flex-direction: column;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+  .icons{
+    color: var(--secondary-color);
+  }
   img{
-    border-radius: 30%;
+    margin: 10% 0;
+    border-radius: 20px;
   }
 
   h2{
     margin:0;
+  }
+
+  .profileName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+      font-size: 10px;
+    }
+
+    .name,
+    .title {
+      flex: 1;
+    }
+
+  }
+
+  button{
+      
+    color: black;
+    padding: 1rem ;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    cursor: pointer;
+    
+  }
+
+  span{
+    margin: 10% 0;
   }
 `

@@ -8,22 +8,30 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function ProfileDiv() {
   return (
     <ProfDiv>
-        <h2>Jonatas</h2>
-        <p>Fullstack Developer</p>
+        <div className='profileName'>
+            <div className='name'>
+                <h2>Jonatas</h2>
+            </div>
+            <div className='title'>
+                <p>Fullstack Developer</p>
+            </div>
+      </div>
         <img src="https://media.licdn.com/dms/image/D4D03AQF0S8GTV9uTHQ/profile-displayphoto-shrink_200_200/0/1681177109864?e=1697673600&v=beta&t=PP4mHkP2KhumAdq7V10WTW6pvwKabrP_bByUhJpOmgY" alt=""/>
-        <p>
-            jonataspmpm@gmail.com
-            <br/>
-            Base in Fortaleza, Brazil
-        </p>
+       
+  
+            <p>jonataspmpm@gmail.com</p>
+            <p>Base in Fortaleza, BR</p>        
         
-        <p>© 2023 jonatas. All Rights Reserverd</p>
-        <LinkedInIcon/>
-        <GitHubIcon/>
-        <InstagramIcon/>
-        <WhatsAppIcon/>
+        <span>© 2023 Jonatas. All Rights Reserverd</span>
+
+        <div className='icons'>
+            <LinkedInIcon />
+            <GitHubIcon/>
+            <InstagramIcon/>
+            <WhatsAppIcon/>
+        </div>
         
-        <button>Contact Me</button>
+        <button><b>Contact Me</b></button>
     </ProfDiv>
     );
 }

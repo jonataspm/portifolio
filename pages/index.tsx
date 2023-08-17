@@ -8,7 +8,7 @@ import ContainerDiv from '../components/container/style'
 
 const Home: NextPage = () => {
   return (
-    <ContainerDiv>
+    <div className={styles.container}>
       <Head>
         <title>Forms</title>
         <meta name="description" content="Alocate peoples" />
@@ -19,9 +19,7 @@ const Home: NextPage = () => {
         <ProfileDiv/>
         <Header/>
       </main>
-
-      
-    </ContainerDiv>
+    </div>
   )
 }
 
