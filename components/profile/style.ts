@@ -2,58 +2,57 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const ProfDiv = styled.div`
+display: flex;
+flex-direction: column;
 
-  padding: 2%;
-  width: 30%;
-  border-radius: 20px;
-  border: 1px solid var(--secondary-color);
+padding: 5%;
+border: 1px solid var(--secondary-color);
+border-radius: 20px;
 
-  flex-direction: column;
+width: 100%;
+height: 85vh;
+
+align-items: center;
+
+.profileName{
+  justify-content: space-between;
+  align-items: baseline;
   display: flex;
-  justify-content: center; 
-  align-items: center;
+  flex-direction: row;
+  width: 100%;
 
-  .icons{
-    color: var(--secondary-color);
+  p{
+    font-size: 13px;
   }
-  img{
-    margin: 10% 0;
-    border-radius: 20px;
-  }
+}
 
-  h2{
-    margin:0;
-  }
+img{
+  margin: 12% 0;
+  width: 100%;
 
-  .profileName{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  border-radius: 10px;
+  
+}
 
-    p{
-      font-size: 10px;
-    }
+span{
+  margin: 12% 0;
+}
 
-    .name,
-    .title {
-      flex: 1;
-    }
+button{
 
-  }
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  padding:4%;
+  background-color: var(--third-color);
+  color: black;
+  cursor: pointer;
+}
 
-  button{
-      
-    color: black;
-    padding: 1rem ;
-    border: none;
-    width: 100%;
-    border-radius: 20px;
-    background-color: var(--third-color);
-    cursor: pointer;
-    
-  }
+.icons{
+  color: var(--secondary-color);
+  margin-bottom: auto;
+  justify-content: space-around;
+}
 
-  span{
-    margin: 10% 0;
-  }
 `

@@ -15,9 +15,19 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>      
-        <ProfileDiv/>
-        <Header/>
+      <main className={styles.main}>     
+        <div className={styles.left_side}>
+          <ProfileDiv/>
+        </div> 
+
+        <div className={styles.middle_side}>
+          <Header/>
+        </div>
+
+        <div className={styles.right_side}>
+          <p>home</p>
+        </div>
+        
       </main>
     </div>
   )

@@ -1,16 +1,43 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const NavBarDiv = styled.div`
-  box-shadow: 0 1px 3px -2px gray;
-  display: flex;
-  min-height: 60px;
-  max-height: 5%;
-  padding-left: 2%;
-  padding-right: 2%;
-  align-items: center;
+export const SectionNameDiv = styled.div`
+margin-left:10%;
+margin-top: 5%;
 
-  .logotipo {
-    width: 8%;
+h1{
+  transition: all;
+  font-size: 80px;
+  animation: taglineAnimation 2ms 5 iteration-count direction fill-mode;
+}
+
+b{
+  color: var(--third-color);
+}
+
+.line {
+  overflow: hidden;
+
+}
+.lineUp {
+  animation: 3s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
   }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 `

@@ -10,16 +10,15 @@ export default function ProfileDiv() {
     <ProfDiv>
         <div className='profileName'>
             <div className='name'>
-                <h2>Jonatas</h2>
+                <h1>Jonatas</h1>
             </div>
             <div className='title'>
                 <p>Fullstack Developer</p>
             </div>
       </div>
-        <img src="https://media.licdn.com/dms/image/D4D03AQF0S8GTV9uTHQ/profile-displayphoto-shrink_200_200/0/1681177109864?e=1697673600&v=beta&t=PP4mHkP2KhumAdq7V10WTW6pvwKabrP_bByUhJpOmgY" alt=""/>
-       
-  
-            <p>jonataspmpm@gmail.com</p>
+        <img src="./eu1s.jpg" alt="" />
+         
+            <p>Jonataspmpm@gmail.com</p>
             <p>Base in Fortaleza, BR</p>        
         
         <span>© 2023 Jonatas. All Rights Reserverd</span>

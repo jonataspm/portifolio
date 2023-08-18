@@ -1,11 +1,99 @@
-import { NavBarDiv } from './style'
+import { SectionNameDiv } from './style'
 export const Header = () => {
 
   return (
-    <div>
+    <SectionNameDiv>
       <section>
-        <h1>Hi, I'm Jonatas, a FullStack Developer</h1>
+        <div className='line'>
+          <h1 className='lineUp'>Hi, my name is Jonatas,</h1>
+          <h1 className='lineUp'>and i'm a <b>FullStack Developer</b></h1>
+        </div>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p><p>aaaaaa</p>
+        <p>aaaaaa</p>
+        <p>aaaaaa</p>
+
       </section>
-    </div>
+    </SectionNameDiv>
   )
 }

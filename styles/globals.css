@@ -12,7 +12,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Inter', Handjet, cursive;
+  font-family: 'Inter', Handjet, sans-serif;
 
 }
 span{
@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 span{
-  font-size: 10px;
+  font-size: 13px;
 }
 * {
   margin: 0;
