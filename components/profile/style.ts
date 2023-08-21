@@ -29,17 +29,16 @@ align-items: center;
 img{
   margin: 12% 0;
   width: 100%;
-
   border-radius: 10px;
-  
 }
 
 span{
   margin: 12% 0;
 }
 
-button{
 
+
+.btn{
   width: 100%;
   border-radius: 20px;
   border: none;
@@ -47,12 +46,33 @@ button{
   background-color: var(--third-color);
   color: black;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  b{
+    margin-left: 2%;
+  }
 }
 
 .icons{
+  
+  display: flex;
   color: var(--secondary-color);
   margin-bottom: auto;
   justify-content: space-around;
+
+  a{
+    margin: 0 10%;
+  }
+
+  a:hover{
+    color: var(--third-color);
+  }
 }
+
+.btnMode{
+  margin: auto;
+}
+
 
 `

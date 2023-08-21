@@ -6,10 +6,12 @@
   --secondary-color:  #636364;
   --third-color: #27E88C;
   --background-color: #121215; 
+  transition: var(--primary-color) 0.3s ease, var(--secondary-color) 0.3s ease, var(--third-color) 0.3s ease, var(--background-color) 1.3s ease;
 }
 
 html,
 body {
+  background: var(--background-color);
   padding: 0;
   margin: 0;
   font-family: 'Inter', Handjet, sans-serif;
@@ -27,7 +29,7 @@ a {
   text-decoration: none;
 }
 span{
-  font-size: 13px;
+  font-size: 15px;
 }
 * {
   margin: 0;

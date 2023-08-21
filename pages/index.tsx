@@ -10,6 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
+        <base target="_blank"/>
         <title>Forms</title>
         <meta name="description" content="Alocate peoples" />
         <link rel="icon" href="/favicon.ico" />
