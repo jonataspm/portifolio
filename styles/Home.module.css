@@ -15,7 +15,8 @@
 .left_side{
   flex-grow: 0;
   position: fixed;
-  display: block;
+  display: absolute;
+  top: 6%;
   width: 22%;
 }
 

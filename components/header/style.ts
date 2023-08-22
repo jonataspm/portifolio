@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const SectionNameDiv = styled.div`
-margin-left:10%;
-margin-top: 5%;
+margin: 5% 5% 0% 10%;
 display: flex;
-flex-direction: row;
+flex-direction: column;
+
 h1{
   transition: all;
   font-size: 80px;
@@ -44,11 +44,35 @@ b{
 .headerInfos{
   display: flex;
   flex-direction: row;
-
+  margin-top: 20%;
   .infoContent{
     width: 10%;
     margin-right: 5%;
+    margin-bottom: 20%;
+
+    h1{
+      flex-direction: row;
+      display: flex;
+    }
   }
+}
+
+#boxBorder {
+    height: 3em;
+    overflow: hidden;
+    }
+#boxBorder:hover {
+height: 5em;
+overflow: hidden;
+}
+#boxBorder:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100px; 
+    bottom: 10%;
+    background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(256,256,256,0));   
 }
 
 `
