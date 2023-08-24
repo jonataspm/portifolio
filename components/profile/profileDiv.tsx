@@ -31,7 +31,7 @@ export default function ProfileDiv() {
                     <p>Fullstack Developer</p>
                 </div>
             </div>
-            <img src="./eu1s.jpg" alt="" />
+            <img className='profilepic' src="./eu1s.jpg" alt="" />
 
             <p>Jonataspmpm@gmail.com</p>
             <p>Base in Fortaleza, BR</p>

@@ -26,12 +26,6 @@ align-items: center;
   }
 }
 
-img{
-  margin: 12% 0;
-  width: 100%;
-  border-radius: 10px;
-}
-
 span{
   margin: 12% 0;
 }
