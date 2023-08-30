@@ -34,10 +34,10 @@ export const FirstSection = () => {
     <section>
         <div className='line'>
           <h1 className='lineUp'>Hi, my name is Jonatas,</h1>
-          <h1 className='lineUp'>and I'm a <b>FullStack Developer</b></h1>
+          <h1 className='lineUp'>and I&apos;m a <b>FullStack Developer</b></h1>
         </div>
 
-        <span>I've been programming for a while, come and follow my accomplishments</span>
+        <span>I&apos;ve been programming for a while, come and follow my accomplishments</span>
         <br />
         <span>Enjoy!</span>
 

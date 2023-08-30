@@ -2,11 +2,14 @@
   "name": "forms",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jonataspm.github.io/portifolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && gh-pages -d out",
+    "predeploy": "yarn build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -15,6 +18,7 @@
     "@mui/material": "^5.14.2",
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
+    "gh-pages": "^6.0.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
