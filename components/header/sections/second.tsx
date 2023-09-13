@@ -32,7 +32,7 @@ export const SecondSection = () => {
 
   return (
     <section>
-        <h1>Projects</h1>
+        <h1>Experience</h1>
         <p>my projects</p>
     </section>
   );
