@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ProfDiv } from './style';
-
+import Image from 'next/image';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -32,7 +32,7 @@ export default function ProfileDiv() {
                     <p>Fullstack Developer</p>
                 </div>
             </div>
-            <img className='profilepic' src="./eu1s.jpg" alt="" />
+            <Image className='profilepic' src="./eu1s.jpg" alt="" />
 
             <p>Jonataspmpm@gmail.com</p>
             <p>Base in Fortaleza, BR</p>
