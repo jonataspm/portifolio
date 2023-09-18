@@ -5,7 +5,7 @@ import { ExperienceLI } from './style';
 export const ExpiriencesBox = () => {
   return (
     <ExperienceLI>
-        <img src="../../fitbanco.svg" className='enterpriseAnimated' alt='EnterpriseIcon'/>
+        <img src="../../fitbanco.jpg" className='enterpriseAnimated' alt='EnterpriseIcon'/>
 
         <div>
             <h3>Atividades principais: </h3>
