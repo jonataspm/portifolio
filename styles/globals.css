@@ -41,6 +41,42 @@ span{
   border-radius: 10px;
 }
 
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.features ul {
+  max-width: 394px;
+  position: relative;
+}
+
+.features ul:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 100%;
+  left: 86px;
+  background: white;
+  -webkit-transform: translateX(-1px);
+  transform: translateX(-1px);
+}
+
+.bound {
+  width: 87%;
+  max-width: calc(996 * 1px);
+  margin: 0 auto;
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { SectionNameDiv } from '../style';
 import { getYearsWorked } from '../../../pages/api/getYeats';
 import { useSpring, animated } from 'react-spring';
+import { ExpiriencesBox } from '../../ExprienceProfile/exprencieProf';
 
 function Number({ n }:any):any {
   const { number } = useSpring({
@@ -33,7 +34,15 @@ export const SecondSection = () => {
   return (
     <section>
         <h1>Experience</h1>
-        <p>my projects</p>
+        <div className='features'>
+          <div className='bound'>
+            <ul>
+              <ExpiriencesBox/>
+              <ExpiriencesBox/>
+              <ExpiriencesBox/>
+            </ul>
+          </div>
+        </div>
     </section>
   );
 }
