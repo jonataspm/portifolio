@@ -6,31 +6,47 @@ export const ContactSection = () => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
 
     const handlePhoneNumberChange = (value: any) => {
-      setPhoneNumber(value);
+        setPhoneNumber(value);
     };
-    
-    const inputProps = {
-        step: 300,
-        color: "red" 
-      };
 
-  return (
-    <section>
-         <h1>Contact</h1>
-        <form action="">
-            <TextField id="outlined-basic" label="Full Name" variant="outlined" color='secondary'/>
-            <TextField id="outlined-basic" label="Email" variant="outlined" />
-            <MuiPhoneNumber
-                defaultCountry={'br'}
-                value={phoneNumber}
-                onChange={handlePhoneNumberChange}
-                variant="outlined"
-                fullWidth
-                label="Phone Number"
-                name="phoneNumber"
-            />
-            <TextField id="outlined-basic" label="Description" variant="outlined" />
-        </form>
-    </section>
-  );
+    return (
+        <section>
+            <h1>Contact</h1>
+            <form >
+
+                <div className='contact-name'>
+                    <label htmlFor="name">Full Name</label>
+                    <input type="text" id='name' name='name' placeholder='Your full name' required />
+                </div>
+
+                <div className='contact-email'>
+                    <label htmlFor="email">Email </label>
+                    <input type="email" id='email' name='email' placeholder='Your email address' required />
+                </div>
+
+                <div className='contact-phonenumber'>
+                    <label htmlFor="phonenumber">Phone</label> <span>(optional)</span>
+                    <MuiPhoneNumber
+                        defaultCountry={'br'}
+                        value={phoneNumber}
+                        onChange={handlePhoneNumberChange}
+                        fullWidth
+                        name="phonenumber"
+                        id='phonenumber'
+                    />
+                </div>
+
+                <div className='contact-mensage'>
+                    <label htmlFor="mensage">Mensage</label>
+                    <input type="text" id='mensage' name='mensage' placeholder='Write your mensage here...' required/>
+                </div>
+
+                <div className='contact-mensage'>
+                    <input type="file" id="myfile" name="myfile" placeholder='Attachment here'/>
+                    
+                </div>
+                
+            </form>
+        </section>
+    );
 }
