@@ -75,7 +75,9 @@ ul{
   margin: 0 auto;
 }
 
-
+.contact-basic{
+  border-color: white;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

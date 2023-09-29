@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 
 export async function getYearsWorked(url: string) {
   try {
+
     const response = await axios.get(url);
     const html = response.data;
 
