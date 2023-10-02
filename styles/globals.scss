@@ -31,6 +31,10 @@ a {
 span{
   font-size: 15px;
 }
+label{
+  color: white;
+  font-size: 14px;
+}
 * {
   margin: 0;
   box-sizing: border-box;
@@ -88,3 +92,56 @@ ul{
     background: #f3f3f3;
   }
 }
+
+.contact-form{
+  
+  span{
+    font-size: 13px;
+    margin-left: 5px;
+  }
+
+  .contact{
+    margin: 0 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  input,#phonenumber{
+    color: var(--primary-color);
+    padding: 1rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    width: auto;
+    box-shadow: none; 
+    font-size: larger;
+
+    &:focus{
+      outline: 0;
+      border-bottom: 1px solid var(--third-color); /* Cor da borda inferior quando em foco */
+      transition: border-bottom-color 0.3s, box-shadow 0.3s; 
+      
+    }
+  }
+ 
+ 
+  input[type='file']{
+    display: none;
+  }
+  .contact-file{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+    label{
+      margin-left: 10px;
+    }
+  }  
+}
+

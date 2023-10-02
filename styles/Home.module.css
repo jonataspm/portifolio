@@ -16,8 +16,8 @@
   flex-grow: 0;
   position: fixed;
   display: absolute;
-  top: 6%;
-  width: 22%;
+  margin: 3px;
+  width: 25%;
 }
 
 .middle_side{

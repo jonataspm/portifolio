@@ -5,7 +5,7 @@ export const ProfDiv = styled.div`
 display: flex;
 flex-direction: column;
 
-padding: 5%;
+padding: 50px;
 border: 1px solid var(--secondary-color);
 border-radius: 20px;
 
