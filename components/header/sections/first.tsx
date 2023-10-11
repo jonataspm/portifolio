@@ -15,20 +15,9 @@ function Number({ n }:any):any {
 }
 
 export const FirstSection = () => {
-  const [years, setYears] = useState(0);
   const profileURL = 'https://www.linkedin.com/in/jonatasp/';
+  const years = 2
   const projects = 4;
-
-  useEffect(() => {
-    getYearsWorked(profileURL)
-      .then(result => {
-        // Assuming 'result' contains the number of years worked
-        setYears(2); // Convert to string before setting
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  }, []); // Run once on component mount
 
   return (
     <section>
@@ -44,7 +33,7 @@ export const FirstSection = () => {
         <div className='headerInfos'> 
           <div className='infoContent'>
             <h1>
-              <Number n={(projects-2)}/>+
+              <Number n={(years)}/>+
             </h1>
             <span>YEARS OF EXPERIENCE</span>
           </div>

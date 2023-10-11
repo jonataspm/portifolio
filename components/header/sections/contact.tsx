@@ -53,16 +53,16 @@ export const ContactSection = () => {
                     </div>
                 </div>
 
-                <div className='contact contact-mensage'>
-                    <label htmlFor="mensage">MENSAGE</label>
-                    <input aria-colcount={50} type="text" id="myfile" name="myfile" placeholder='Write your mensage here...' />
+                <div className='contact contact-menssage'>
+                    <label htmlFor="menssage">MENSSAGE</label>
+                    <input type="text" id="menssage" name="menssage" placeholder='Write your mensage here...' />
                 </div>
 
                 <a className='contact contact-file'>
                     <AddLinkIcon sx={{ color: "white" }} />
                     <label htmlFor="myfile"> ADD AN ATTACHMENT</label>
                     <input type="file" id="myfile" name="myfile" placeholder='Attachment here' />
-                </a>
+                </a>    
 
             </form>
         </section>

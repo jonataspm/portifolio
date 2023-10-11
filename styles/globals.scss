@@ -3,9 +3,9 @@
 
 :root {
   --primary-color: white;
-  --secondary-color:  #636364;
+  --secondary-color: #636364;
   --third-color: #27E88C;
-  --background-color: #121215; 
+  --background-color: #121215;
   transition: var(--primary-color) 0.3s ease, var(--secondary-color) 0.3s ease, var(--third-color) 0.3s ease, var(--background-color) 1.3s ease;
 }
 
@@ -17,10 +17,15 @@ body {
   font-family: 'Inter', Handjet, sans-serif;
 
 }
-span{
+
+span {
   color: var(--secondary-color);
 }
-p,h1,h2,h3{
+
+p,
+h1,
+h2,
+h3 {
   color: var(--primary-color);
 }
 
@@ -28,24 +33,28 @@ a {
   color: inherit;
   text-decoration: none;
 }
-span{
+
+span {
   font-size: 15px;
 }
-label{
+
+label {
   color: white;
   font-size: 14px;
 }
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-.profilepic{
+
+.profilepic {
   margin: 12% 0;
   width: 100%;
   border-radius: 10px;
 }
 
-ul{
+ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -79,7 +88,7 @@ ul{
   margin: 0 auto;
 }
 
-.contact-basic{
+.contact-basic {
   border-color: white;
 }
 
@@ -87,61 +96,65 @@ ul{
   html {
     color-scheme: dark;
   }
+
   body {
     color: black;
     background: #f3f3f3;
   }
 }
 
-.contact-form{
-  
-  span{
+.contact-form {
+
+  span {
     font-size: 13px;
     margin-left: 5px;
   }
 
-  .contact{
+  .contact {
     margin: 0 5px;
     width: 30%;
     display: flex;
     flex-direction: column;
   }
-  .contact-row{
+
+  .contact-row {
     display: flex;
     flex-direction: row;
   }
 
-  input,#phonenumber{
+  input,
+  #phonenumber {
     color: var(--primary-color);
     padding: 1rem 0;
     background: none;
     border: none;
     border-bottom: 1px solid var(--secondary-color);
     width: auto;
-    box-shadow: none; 
+    box-shadow: none;
     font-size: larger;
 
-    &:focus{
+    &:focus {
       outline: 0;
-      border-bottom: 1px solid var(--third-color); /* Cor da borda inferior quando em foco */
-      transition: border-bottom-color 0.3s, box-shadow 0.3s; 
-      
+      border-bottom: 1px solid var(--third-color);
+      /* Cor da borda inferior quando em foco */
+      transition: border-bottom-color 0.3s, box-shadow 0.3s;
+
     }
   }
- 
- 
-  input[type='file']{
+
+
+  input[type='file'] {
     display: none;
   }
-  .contact-file{
+
+  .contact-file {
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
 
-    label{
+    label {
       margin-left: 10px;
     }
-  }  
+  }
 }
-
