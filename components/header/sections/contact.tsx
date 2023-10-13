@@ -40,6 +40,8 @@ export const ContactSection = () => {
                             name="phonenumber"
                             id='phonenumber'
                             inputClass='phoneinput'
+                            className='phonenumbercs'
+                            autoFormat={false}
                         />
                     </div>
                     <div className='contact contact-subject'>
@@ -55,7 +57,7 @@ export const ContactSection = () => {
 
                 <div className='contact contact-menssage'>
                     <label htmlFor="menssage">MENSSAGE</label>
-                    <input type="text" id="menssage" name="menssage" placeholder='Write your mensage here...' />
+                    <textarea  id="menssage" name="menssage" placeholder='Write your mensage here...' />
                 </div>
 
                 <a className='contact contact-file'>

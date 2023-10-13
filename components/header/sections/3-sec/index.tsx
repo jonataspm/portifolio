@@ -27,6 +27,7 @@ ary.push(new Knows('Docker', undefined, undefined, 'Only Studies'));
 ary.push(new Knows('React', 'ReactJs', undefined, 'Only Studies'));
 ary.push(new Knows('Typescript', 'TypeScript', undefined, 'Only Studies'));
 
+
 export const ThirdSection = () => {
   return (
     <ThirdSectionComp>

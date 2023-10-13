@@ -10,7 +10,7 @@
 }
 
 html,
-body {
+body, textarea {
   background: var(--background-color);
   padding: 0;
   margin: 0;
@@ -115,6 +115,10 @@ ul {
     width: 30%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 30px;
+
   }
 
   .contact-row {
@@ -122,8 +126,7 @@ ul {
     flex-direction: row;
   }
 
-  input,
-  #phonenumber {
+  input, textarea {
     color: var(--primary-color);
     padding: 1rem 0;
     background: none;
@@ -131,17 +134,24 @@ ul {
     border-bottom: 1px solid var(--secondary-color);
     width: auto;
     box-shadow: none;
-    font-size: larger;
+    font-size: large;
+    resize: none;
 
     &:focus {
       outline: 0;
       border-bottom: 1px solid var(--third-color);
-      /* Cor da borda inferior quando em foco */
       transition: border-bottom-color 0.3s, box-shadow 0.3s;
-
     }
   }
 
+  .phonenumbercs{
+    
+    &:hover {
+      outline: 0;
+      border-bottom: 1px solid var(--third-color);
+      transition: border-bottom-color 0.3s, box-shadow 0.3s;
+    }
+  }
 
   input[type='file'] {
     display: none;
@@ -157,4 +167,9 @@ ul {
       margin-left: 10px;
     }
   }
+
+  textarea{
+    font-size: large;
+  }
+
 }
