@@ -6,6 +6,9 @@
   --secondary-color: #636364;
   --third-color: #27E88C;
   --background-color: #121215;
+  --third-color2: #56e8a23d;
+
+
   transition: var(--primary-color) 0.3s ease, var(--secondary-color) 0.3s ease, var(--third-color) 0.3s ease, var(--background-color) 1.3s ease;
 }
 
@@ -101,75 +104,4 @@ ul {
     color: black;
     background: #f3f3f3;
   }
-}
-
-.contact-form {
-
-  span {
-    font-size: 13px;
-    margin-left: 5px;
-  }
-
-  .contact {
-    margin: 0 5px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-bottom: 30px;
-
-  }
-
-  .contact-row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  input, textarea {
-    color: var(--primary-color);
-    padding: 1rem 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--secondary-color);
-    width: auto;
-    box-shadow: none;
-    font-size: large;
-    resize: none;
-
-    &:focus {
-      outline: 0;
-      border-bottom: 1px solid var(--third-color);
-      transition: border-bottom-color 0.3s, box-shadow 0.3s;
-    }
-  }
-
-  .phonenumbercs{
-    
-    &:hover {
-      outline: 0;
-      border-bottom: 1px solid var(--third-color);
-      transition: border-bottom-color 0.3s, box-shadow 0.3s;
-    }
-  }
-
-  input[type='file'] {
-    display: none;
-  }
-
-  .contact-file {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-
-    label {
-      margin-left: 10px;
-    }
-  }
-
-  textarea{
-    font-size: large;
-  }
-
 }

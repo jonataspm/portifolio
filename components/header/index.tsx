@@ -4,7 +4,7 @@ import { getYearsWorked } from '../../pages/api/getYeats';
 import { useSpring, animated } from 'react-spring';
 import { FirstSection } from './sections/first';
 import { SecondSection } from './sections/second';
-import { ContactSection } from './sections/contact';
+import { ContactSection } from './sections/5-sec/contact';
 import { ThirdSection } from './sections/3-sec';
 
 export const Header = () => {

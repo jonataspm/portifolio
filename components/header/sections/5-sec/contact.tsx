@@ -1,8 +1,9 @@
-import { Button, TextField, colors } from '@mui/material';
 import MuiPhoneNumber from 'material-ui-phone-number-2';
 import React, { useState } from 'react';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
 import AddLinkIcon from '@mui/icons-material/AddLink';
+import { FifthSectionComp } from './style';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/bootstrap.css'
 
 export const ContactSection = () => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
@@ -12,40 +13,34 @@ export const ContactSection = () => {
     };
 
     return (
-        <section>
+        <FifthSectionComp>
             <h1>Contact</h1>
             <form className='contact-form'>
-                <div className='contact-row'>
                     <div className='contact contact-name'>
-                        <label htmlFor="name">FULL NAME</label>
+                        <label htmlFor="name">FULL NAME<sup>*</sup></label>
                         <input type="text" id='name' name='name' placeholder='Your full name' required />
                     </div>
 
                     <div className='contact contact-email'>
-                        <label htmlFor="email">MAIL </label>
+                        <label htmlFor="email">MAIL<sup>*</sup> </label>
                         <input type="email" id='email' name='email' placeholder='Your email address' required />
                     </div>
-                </div>
 
-                <div className='contact-row'>
+
+              
                     <div className='contact contact-phonenumber'>
                         <div className='contact-row'>
                             <label htmlFor="phonenumber">PHONE</label> <span>(optional)</span>
                         </div>
-                        <MuiPhoneNumber
-                            defaultCountry={'br'}
+                        <PhoneInput   
+                            country={'us'} 
                             value={phoneNumber}
                             onChange={handlePhoneNumberChange}
-                            fullWidth
-                            name="phonenumber"
-                            id='phonenumber'
-                            inputClass='phoneinput'
-                            className='phonenumbercs'
-                            autoFormat={false}
+                            inputClass='phoneinp'
                         />
                     </div>
                     <div className='contact contact-subject'>
-                        <label htmlFor="subject">SUBJECT </label>
+                        <label htmlFor="subject">SUBJECT<sup>*</sup></label>
                         <select name="subject" id="subject">
                             <option hidden >Select a subject</option>
                             <option value="0">Interview</option>
@@ -53,11 +48,11 @@ export const ContactSection = () => {
                             <option value="2">Other</option>
                         </select>
                     </div>
-                </div>
+              
 
-                <div className='contact contact-menssage'>
-                    <label htmlFor="menssage">MENSSAGE</label>
-                    <textarea  id="menssage" name="menssage" placeholder='Write your mensage here...' />
+                <div className='contact contact-message'>
+                    <label htmlFor="message">MESSAGE<sup>*</sup></label>
+                    <textarea  id="message" name="message" placeholder='Write your message here...' />
                 </div>
 
                 <a className='contact contact-file'>
@@ -66,7 +61,8 @@ export const ContactSection = () => {
                     <input type="file" id="myfile" name="myfile" placeholder='Attachment here' />
                 </a>    
 
+                <input type="submit" name="" id="" />
             </form>
-        </section>
+        </FifthSectionComp>
     );
 }

@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>     
         <div className={styles.left_side}>
-          <ProfileDiv/>
+          {/* <ProfileDiv/> */}
         </div> 
 
         <div className={styles.middle_side}>
