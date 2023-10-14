@@ -7,7 +7,7 @@ export const FifthSectionComp = styled.section`
 .contact-form{
 
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: repeat(2, auto);
   grid-gap: 20px;
   box-sizing: border-box;
   width: 100%;
@@ -53,6 +53,10 @@ export const FifthSectionComp = styled.section`
 
   .contact-message{
     grid-column: 1 / 3;
+    
+    textarea{
+      height: 140px;
+    }
   }
 
   .contact-file{
@@ -106,8 +110,6 @@ export const FifthSectionComp = styled.section`
         50% {outline-offset: 7px;}
         100% {outline-offset: 0px;}
       }
-
-      
     }
   } 
 }

@@ -2,18 +2,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const SectionNameDiv = styled.div`
-margin: 5% 5% 0% 10%;
+padding: 5%;
 display: flex;
 flex-direction: column;
 
 h1{
   transition: all;
-  font-size: 80px;
+  font-size: 77px;
+  font-weight: 500;
   animation: taglineAnimation 2ms 5 iteration-count direction fill-mode;
 }
 
 b{
   color: var(--third-color);
+  font-weight: 500;
 }
 
 .line {

@@ -5,28 +5,33 @@
 }
 
 .main {
-  min-height: auto;
   padding: 1rem 1rem;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-areas: 'left  middle middle middle   right';
+  gap: 10%;
 
 }
 
 .left_side{
-  flex-grow: 0;
-  position: fixed;
-  display: absolute;
-  margin: 3px;
-  width: 25%;
+  margin: 3px; 
+  grid-area: left;
 }
 
 .middle_side{
-  flex-grow: 5;
-  margin-left: 22%;
+  grid-area: middle;
 }
 
 .right_side{
-  flex-grow: 1;
-  justify-content: flex-end;
-  width: 5% ;
+  grid-area: right;
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-areas: 'left'
+                        'middle'
+                        'right';
+    gap: 3%;
+  }
 }

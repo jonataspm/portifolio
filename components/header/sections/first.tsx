@@ -26,7 +26,7 @@ export const FirstSection = () => {
           <h1 className='lineUp'>and I&apos;m a <b>BackEnd Developer</b></h1>
         </div>
 
-        <span>Wanting be a <b>Fullstack</b> 😭</span>
+        <span>trying to become a <b>Fullstack</b> 😭</span>
         <br />
         <span>Enjoy!</span>
 

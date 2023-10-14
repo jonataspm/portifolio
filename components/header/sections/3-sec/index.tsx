@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThirdSectionComp } from './style';
-import { CardKnow } from './cardKnowledge';
+import { CardKnow } from '../../../Icons/cardKnowledge';
 
 class Knows {
   LanguageName: string;

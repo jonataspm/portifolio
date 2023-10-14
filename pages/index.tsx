@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import ProfileDiv from '../components/profile/profileDiv'
 import { Header } from '../components/header'
+import MenuSideBar from '../components/menu'
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>     
         <div className={styles.left_side}>
-          {/* <ProfileDiv/> */}
+          <ProfileDiv/>
         </div> 
 
         <div className={styles.middle_side}>
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.right_side}>
-          <p>home</p>
+          <MenuSideBar/>
         </div>
         
       </main>

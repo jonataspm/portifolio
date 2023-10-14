@@ -2,7 +2,7 @@ import MuiPhoneNumber from 'material-ui-phone-number-2';
 import React, { useState } from 'react';
 import AddLinkIcon from '@mui/icons-material/AddLink';
 import { FifthSectionComp } from './style';
-import PhoneInput from 'react-phone-input-2'
+import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css'
 
 export const ContactSection = () => {
@@ -33,7 +33,7 @@ export const ContactSection = () => {
                             <label htmlFor="phonenumber">PHONE</label> <span>(optional)</span>
                         </div>
                         <PhoneInput   
-                            country={'us'} 
+                            country={'br'} 
                             value={phoneNumber}
                             onChange={handlePhoneNumberChange}
                             inputClass='phoneinp'
