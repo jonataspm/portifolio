@@ -2,7 +2,7 @@ import React, { useState, useEffect, forwardRef } from 'react';
 import { ExpiriencesBox } from '../../ExprienceProfile/exprencieProf';
 
 
-export const SecondSection = forwardRef((props, ref) => {
+export const SecondSection = () => {
 
   return (
     <section>
@@ -18,4 +18,4 @@ export const SecondSection = forwardRef((props, ref) => {
         </div>
     </section>
   );
-});
+};

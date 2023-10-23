@@ -1,16 +1,12 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { FourthSectionComp } from './style';
-import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect } from "react";
-import { config } from "react-spring";
 import uuidv4 from "react-uuid";
-import Carroussel from './comp/carroussel';
 import CardProject from './comp/cardProject';
 import { StackIcon } from './comp/stackicon';
-import ReactDOM from 'react-dom';
 
 
-export const FourthSection = forwardRef((props, ref) => {
+
+export const FourthSection = () => {
 
     let cards = [];
     
@@ -29,5 +25,5 @@ export const FourthSection = forwardRef((props, ref) => {
       </div>
     </FourthSectionComp>
   )
-});
+};
 

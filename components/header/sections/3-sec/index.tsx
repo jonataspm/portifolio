@@ -1,4 +1,4 @@
-import React, { ForwardedRef, HTMLProps, HtmlHTMLAttributes, Ref, forwardRef } from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 import { ThirdSectionComp } from './style';
 import { CardKnow } from '../../../Icons/cardKnowledge';
 
@@ -28,9 +28,9 @@ ary.push(new Knows('React', 'ReactJs', undefined, 'Only Studies'));
 ary.push(new Knows('Typescript', 'TypeScript', undefined, 'Only Studies'));
 
 
-export const ThirdSection = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) => {
+export const ThirdSection = () => {
   return (
-    <ThirdSectionComp ref={ref}>
+    <ThirdSectionComp>
       <h1>Knowledge</h1>
       <div className='cards-content'>
         {ary.map((item, index) => (
@@ -45,4 +45,4 @@ export const ThirdSection = forwardRef((_, ref: ForwardedRef<HTMLDivElement>) =>
       </div>
     </ThirdSectionComp>
   );
-});
+};

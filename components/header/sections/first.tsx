@@ -12,7 +12,7 @@ function Number({ n }:any):any {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
-export const FirstSection = forwardRef((props, ref) => {
+export const FirstSection = () => {
   const profileURL = 'https://www.linkedin.com/in/jonatasp/';
   const years = 2
   const projects = 4;
@@ -44,4 +44,4 @@ export const FirstSection = forwardRef((props, ref) => {
         </div>
       </section>
   );
-});
+};

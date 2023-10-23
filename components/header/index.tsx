@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { SectionNameDiv } from './style';
 import { FirstSection } from './sections/first';
 import { SecondSection } from './sections/second';

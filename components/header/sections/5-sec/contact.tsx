@@ -5,7 +5,7 @@ import { FifthSectionComp } from './style';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css'
 
-export const ContactSection = forwardRef((props, ref) => {
+export const ContactSection = () => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
 
     const handlePhoneNumberChange = (value: any) => {
@@ -65,4 +65,4 @@ export const ContactSection = forwardRef((props, ref) => {
             </form>
         </FifthSectionComp>
     );
-});
+};
