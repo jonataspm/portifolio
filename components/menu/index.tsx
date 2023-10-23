@@ -28,7 +28,7 @@ export default function MenuSideBar({ innerRefs }: MenuSideBarProps) {
         setIsSideBarOpen(!isSideBarOpen);
     };
 
-    const scrollSmoothHandler = (innerRef: React.RefObject<HTMLElement>) => {
+    function scrollSmoothHandler(innerRef: React.RefObject<HTMLElement>) {
         innerRef.current?.scrollIntoView({ behavior: 'smooth' });
       };
 
@@ -41,22 +41,22 @@ export default function MenuSideBar({ innerRefs }: MenuSideBarProps) {
             <div className={`sideBar ${isSideBarOpen ? 'visible' : 'hidden'}`}>
 
                 <span>Menu</span>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.homeRef)}>
                     <HomeOutlinedIcon /> <p>Home</p>
                 </div>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.introductionRef)}>
                     <PermIdentityOutlinedIcon /> <p>Introduction</p>
                 </div>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.workRef)}>
                     <BusinessCenterOutlinedIcon /> <p>Work Experience</p>
                 </div>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.knowledgesRef)}>
                     <SchoolOutlinedIcon /> <p>Knowledges</p>
                 </div>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.projectsRef)}>
                     <CodeOutlinedIcon /> <p>Projects</p>
                 </div>
-                <div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.contactRef)}>
                     <MailOutlineIcon /> <p>Contact</p>
                 </div>
             </div>
