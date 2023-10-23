@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { SectionNameDiv } from '../style';
-import { getYearsWorked } from '../../../pages/api/getYeats';
+import React, { useState, useEffect, forwardRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 function Number({ n }:any):any {
@@ -14,7 +12,7 @@ function Number({ n }:any):any {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 
-export const FirstSection = () => {
+export const FirstSection = forwardRef((props, ref) => {
   const profileURL = 'https://www.linkedin.com/in/jonatasp/';
   const years = 2
   const projects = 4;
@@ -46,4 +44,4 @@ export const FirstSection = () => {
         </div>
       </section>
   );
-}
+});

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { FourthSectionComp } from './style';
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
@@ -10,7 +10,7 @@ import { StackIcon } from './comp/stackicon';
 import ReactDOM from 'react-dom';
 
 
-export const FourthSection = () => {
+export const FourthSection = forwardRef((props, ref) => {
 
     let cards = [];
     
@@ -28,6 +28,6 @@ export const FourthSection = () => {
         
       </div>
     </FourthSectionComp>
-  );
-};
+  )
+});
 

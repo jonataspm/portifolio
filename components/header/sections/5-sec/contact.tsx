@@ -1,11 +1,11 @@
 import MuiPhoneNumber from 'material-ui-phone-number-2';
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import AddLinkIcon from '@mui/icons-material/AddLink';
 import { FifthSectionComp } from './style';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css'
 
-export const ContactSection = () => {
+export const ContactSection = forwardRef((props, ref) => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
 
     const handlePhoneNumberChange = (value: any) => {
@@ -65,4 +65,4 @@ export const ContactSection = () => {
             </form>
         </FifthSectionComp>
     );
-}
+});

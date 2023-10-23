@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { SectionNameDiv } from './style';
 import { FirstSection } from './sections/first';
 import { SecondSection } from './sections/second';
@@ -6,14 +6,45 @@ import { ContactSection } from './sections/5-sec/contact';
 import { ThirdSection } from './sections/3-sec';
 import { FourthSection } from './sections/4-sec';
 
-export const Header = () => {
+type HeaderProps = {
+  innerRefs: {
+    homeRef: React.RefObject<HTMLDivElement>;
+    introductionRef: React.RefObject<HTMLDivElement>;
+    workRef: React.RefObject<HTMLDivElement>;
+    knowledgesRef: React.RefObject<HTMLDivElement>;
+    projectsRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement>;
+  };
+};
+
+export function Header({ innerRefs }: HeaderProps) {
+
   return (
     <SectionNameDiv id='boxBorder'>
-      <FirstSection/>
-      <SecondSection/>
-      <ThirdSection/>
-      <FourthSection/>
-      <ContactSection/>
+      <div ref={innerRefs.homeRef}>
+        <FirstSection />
+      </div>
+
+      <div ref={innerRefs.introductionRef}>
+        <b>About Me</b>
+      </div>
+
+      <div ref={innerRefs.workRef}>
+        <SecondSection />
+      </div>
+
+      <div ref={innerRefs.knowledgesRef} >
+        <ThirdSection />
+      </div>
+
+      <div ref={innerRefs.projectsRef}>
+        <FourthSection  />
+      </div>
+
+      <div ref={innerRefs.contactRef}>
+        <ContactSection />
+      </div>
+
     </SectionNameDiv>
   );
 }

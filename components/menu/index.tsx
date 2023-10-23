@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 import { MenuDiv, } from './style';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
@@ -8,51 +8,78 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
-export default function MenuSideBar() {
+
+type MenuSideBarProps = {
+    innerRefs: {
+      homeRef: React.RefObject<HTMLDivElement>;
+      introductionRef: React.RefObject<HTMLDivElement>;
+      workRef: React.RefObject<HTMLDivElement>;
+      knowledgesRef: React.RefObject<HTMLDivElement>;
+      projectsRef: React.RefObject<HTMLDivElement>;
+      contactRef: React.RefObject<HTMLDivElement>;
+    };
+  };
+
+export default function MenuSideBar({ innerRefs }: MenuSideBarProps) {
 
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
     const opSideBar = () => {
-      setIsSideBarOpen(!isSideBarOpen);
+        setIsSideBarOpen(!isSideBarOpen);
     };
 
+    const scrollSmoothHandler = (innerRef: React.RefObject<HTMLElement>) => {
+        innerRef.current?.scrollIntoView({ behavior: 'smooth' });
+      };
 
     return (
         <MenuDiv>
             <div className='side_menu_bar' onClick={opSideBar}>
-                <MenuOutlinedIcon id='toggleButton'/>
+                <MenuOutlinedIcon id='toggleButton' />
             </div>
             <div className={`overlay ${isSideBarOpen ? 'active' : ''}`} onClick={opSideBar}></div>
             <div className={`sideBar ${isSideBarOpen ? 'visible' : 'hidden'}`}>
-                
+
                 <span>Menu</span>
                 <div>
-                    <HomeOutlinedIcon/> <p>Home</p>
+                    <HomeOutlinedIcon /> <p>Home</p>
                 </div>
                 <div>
-                    <PermIdentityOutlinedIcon/> <p>Introduction</p>
+                    <PermIdentityOutlinedIcon /> <p>Introduction</p>
                 </div>
                 <div>
-                    <BusinessCenterOutlinedIcon/> <p>Work Experience</p>
+                    <BusinessCenterOutlinedIcon /> <p>Work Experience</p>
                 </div>
                 <div>
-                    <SchoolOutlinedIcon/> <p>Knowledges</p>
+                    <SchoolOutlinedIcon /> <p>Knowledges</p>
                 </div>
                 <div>
-                    <CodeOutlinedIcon/> <p>Projects</p>
+                    <CodeOutlinedIcon /> <p>Projects</p>
                 </div>
                 <div>
-                    <MailOutlineIcon/> <p>Contact</p>
-                </div>   
+                    <MailOutlineIcon /> <p>Contact</p>
+                </div>
             </div>
 
             <div className='side_menu'>
-                <HomeOutlinedIcon/>
-                <PermIdentityOutlinedIcon/>
-                <BusinessCenterOutlinedIcon/>
-                <SchoolOutlinedIcon/>
-                <CodeOutlinedIcon/>
-                <MailOutlineIcon/>
+                <div onClick={() => scrollSmoothHandler(innerRefs.homeRef)}>
+                    <HomeOutlinedIcon />
+                </div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.introductionRef)}>
+                    <PermIdentityOutlinedIcon />
+                </div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.workRef)}>
+                    <BusinessCenterOutlinedIcon />
+                </div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.knowledgesRef)}>
+                    <SchoolOutlinedIcon />
+                </div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.projectsRef)}>
+                    <CodeOutlinedIcon />
+                </div>
+                <div onClick={() => scrollSmoothHandler(innerRefs.contactRef)}>
+                    <MailOutlineIcon />
+                </div>
             </div>
         </MenuDiv>
     );
