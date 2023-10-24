@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 export const SectionNameDiv = styled.div`
-padding: 5%;
+padding: 0% 5%;
 display: flex;
 flex-direction: column;
 

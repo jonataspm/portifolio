@@ -26,7 +26,7 @@ export function Header({ innerRefs }: HeaderProps) {
       </div>
 
       <div ref={innerRefs.introductionRef}>
-        <b>About Me</b>
+        <section style={{color:'red'}}>About Me</section>
       </div>
 
       <div ref={innerRefs.workRef}>
