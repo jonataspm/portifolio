@@ -3,6 +3,7 @@ import { FourthSectionComp } from './style';
 import uuidv4 from "react-uuid";
 import CardProject from './comp/cardProject';
 import { StackIcon } from './comp/stackicon';
+import { TitleSection } from '../../../title-header';
 
 
 
@@ -19,6 +20,7 @@ export const FourthSection = () => {
 
   return (
     <FourthSectionComp>
+      <TitleSection Name='Projects'/>
       <h1>Projects</h1>
       <div id='projects_content'>
         

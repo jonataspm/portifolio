@@ -1,7 +1,7 @@
-import React, { ForwardedRef, forwardRef } from 'react';
+import React from 'react';
 import { ThirdSectionComp } from './style';
 import { CardKnow } from '../../../Icons/cardKnowledge';
-import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
+import { TitleSection } from '../../../title-header';
 
 class Knows {
   LanguageName: string;
@@ -32,9 +32,7 @@ ary.push(new Knows('Typescript', 'TypeScript', undefined, 'Only Studies'));
 export const ThirdSection = () => {
   return (
     <ThirdSectionComp>
-      <div className='menu-header'>
-        <SchoolOutlinedIcon /> <p>Knowledges</p>
-      </div>
+      <TitleSection Name='Knowledge'/>
       <h1>Knowledge</h1>
       <div className='cards-content'>
         {ary.map((item, index) => (

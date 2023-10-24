@@ -4,6 +4,7 @@ import AddLinkIcon from '@mui/icons-material/AddLink';
 import { FifthSectionComp } from './style';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css'
+import { TitleSection } from '../../../title-header';
 
 export const ContactSection = () => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
@@ -14,6 +15,7 @@ export const ContactSection = () => {
 
     return (
         <FifthSectionComp>
+            <TitleSection Name='Contact'/>
             <h1>Contact</h1>
             <form className='contact-form'>
                     <div className='contact contact-name'>
@@ -26,8 +28,6 @@ export const ContactSection = () => {
                         <input type="email" id='email' name='email' placeholder='Your email address' required />
                     </div>
 
-
-              
                     <div className='contact contact-phonenumber'>
                         <div className='contact-row'>
                             <label htmlFor="phonenumber">PHONE</label> <span>(optional)</span>
