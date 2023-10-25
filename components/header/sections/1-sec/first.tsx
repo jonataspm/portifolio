@@ -23,7 +23,7 @@ export const FirstSection = () => {
     <section>
         <TitleSection Name='Home'/>
         <div className='line'>
-          <Title className='lineUp'>Hi, call me Jonatas, I&apos;m a <b>BackEnd Developer</b></Title>
+          <Title className='lineUp'>Hi, call me Jonatas, I&#39;m a <b>BackEnd Developer</b></Title>
         </div>
 
         <span>trying to become a <b>Fullstack</b> 😭</span>
