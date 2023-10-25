@@ -5,7 +5,7 @@ import { SecondSection } from './sections/2-sec/second';
 import { ContactSection } from './sections/5-sec/contact';
 import { ThirdSection } from './sections/3-sec';
 import { FourthSection } from './sections/4-sec';
-import { IntroductionSection } from './sections/1.2-sec/first';
+import { IntroductionSection } from './sections/1.2-sec/firstsec';
 
 type HeaderProps = {
   innerRefs: {

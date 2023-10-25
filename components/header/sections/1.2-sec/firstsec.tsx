@@ -16,7 +16,7 @@ export const IntroductionSection = () => {
         <Paragraph>
           Technical leader in banking technology with a strong focus on boletos. 
           My journey at FitBank has been characterized by continuous technical enhancement and inspirational leadership. 
-          I serve as a Technical Leader, specializing in banking products such as 'boleto collection' through CIP and CNAB 400. 
+          I serve as a Technical Leader, specializing in banking products such as &#39;boleto collection&#39; through CIP and CNAB 400. 
           My leadership drives teams and ensures delivery excellence, while my expertise spans C#, JS, MVC, .Net, RESTful APIs, and microservices architecture.
         </Paragraph>
 
