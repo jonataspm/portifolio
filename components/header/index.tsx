@@ -1,10 +1,11 @@
 import React from 'react';
 import { SectionNameDiv } from './style';
-import { FirstSection } from './sections/first';
-import { SecondSection } from './sections/second';
+import { FirstSection } from './sections/1-sec/first';
+import { SecondSection } from './sections/2-sec/second';
 import { ContactSection } from './sections/5-sec/contact';
 import { ThirdSection } from './sections/3-sec';
 import { FourthSection } from './sections/4-sec';
+import { IntroductionSection } from './sections/1.2-sec/first';
 
 type HeaderProps = {
   innerRefs: {
@@ -26,7 +27,7 @@ export function Header({ innerRefs }: HeaderProps) {
       </div>
 
       <div ref={innerRefs.introductionRef}>
-        <section style={{color:'red'}}>About Me</section>
+        <IntroductionSection/>
       </div>
 
       <div ref={innerRefs.workRef}>

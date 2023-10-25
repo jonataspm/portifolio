@@ -5,6 +5,7 @@ import { MenuIcons } from '../Icons/regular/menuicon'
 const TitleSectionDiv = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10px;
 
   border: 1px solid var(--secondary-color);
@@ -12,6 +13,8 @@ const TitleSectionDiv = styled.div`
   padding: 10px 20px;
   border-radius: 100px;
   color: var(--third-color);
+
+  margin-bottom: 5%;
 
   p{
     color: var(--primary-color);

@@ -5,6 +5,7 @@ import { FifthSectionComp } from './style';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/bootstrap.css'
 import { TitleSection } from '../../../title-header';
+import { SecondTitle } from '../../../styleds/styleds';
 
 export const ContactSection = () => {
     const [phoneNumber, setPhoneNumber] = useState<string>('');
@@ -16,7 +17,7 @@ export const ContactSection = () => {
     return (
         <FifthSectionComp>
             <TitleSection Name='Contact'/>
-            <h1>Contact</h1>
+            <SecondTitle>Did you liked? <b>Call me.</b></SecondTitle>
             <form className='contact-form'>
                     <div className='contact contact-name'>
                         <label htmlFor="name">FULL NAME<sup>*</sup></label>

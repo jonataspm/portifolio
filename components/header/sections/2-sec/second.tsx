@@ -1,6 +1,7 @@
 import React, { useState, useEffect, forwardRef } from 'react';
-import { ExpiriencesBox } from '../../ExprienceProfile/exprencieProf';
-import { TitleSection } from '../../title-header';
+import { ExpiriencesBox } from '../../../ExprienceProfile/exprencieProf';
+import { TitleSection } from '../../../title-header';
+import { SecondTitle } from '../../../styleds/styleds';
 
 
 export const SecondSection = () => {
@@ -8,7 +9,7 @@ export const SecondSection = () => {
   return (
     <section>
       <TitleSection Name='Experience'/>
-      <h1>Experience</h1>
+      <SecondTitle>My <b>career</b> path</SecondTitle>
       <div className='features'>
         <div className='bound'>
           <ul>

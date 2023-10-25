@@ -4,6 +4,7 @@ import uuidv4 from "react-uuid";
 import CardProject from './comp/cardProject';
 import { StackIcon } from './comp/stackicon';
 import { TitleSection } from '../../../title-header';
+import { SecondTitle } from '../../../styleds/styleds';
 
 
 
@@ -21,7 +22,7 @@ export const FourthSection = () => {
   return (
     <FourthSectionComp>
       <TitleSection Name='Projects'/>
-      <h1>Projects</h1>
+      <SecondTitle>My project <b>collection</b></SecondTitle>
       <div id='projects_content'>
         
       </div>

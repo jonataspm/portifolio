@@ -1,6 +1,7 @@
 import Reactfrom from 'react';
 import { useSpring, animated } from 'react-spring';
-import { TitleSection } from '../../title-header';
+import { TitleSection } from '../../../title-header';
+import { Title } from '../../../styleds/styleds';
 
 function Number({ n }:any):any {
   const { number } = useSpring({
@@ -22,8 +23,7 @@ export const FirstSection = () => {
     <section>
         <TitleSection Name='Home'/>
         <div className='line'>
-          <h1 className='lineUp'>Hi, my name is Jonatas,</h1>
-          <h1 className='lineUp'>and I&apos;m a <b>BackEnd Developer</b></h1>
+          <Title className='lineUp'>Hi, call me Jonatas, I&apos;m a <b>BackEnd Developer</b></Title>
         </div>
 
         <span>trying to become a <b>Fullstack</b> 😭</span>
